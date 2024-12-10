@@ -10,7 +10,7 @@ fn get_image(dir: &str, scale: u32) {
         for x in (0..width).step_by(scale as usize) {
             let pix = img.get_pixel(x, y);
 
-            let block = "█".truecolor(pix[0], pix[1], pix[2]);
+            let block = "▓".truecolor(pix[0], pix[1], pix[2]);
 
             print!("{}", block);
         }
